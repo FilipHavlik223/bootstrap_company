@@ -18,7 +18,7 @@
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="#" class="nav-link text-white">Hlavní stránka</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Hlavní stránka</a></li>
                 <li class="nav-item"><a href="items.html" class="nav-link text-white">Produkty</a></li>
             </ul>
         </div>
@@ -62,9 +62,9 @@
     </div>
 </section>
 
-<section class="container mt-5" id="Items" style=" min-height: 70vh !important;">
+<section class="container mt-5" id="Items" style="min-height: 70vh !important;">
     <h2 class="text-center mb-4">Nabídka produktů</h2>
-    <div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center" style=":hover transform">
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
                 <img src="photos/eco_batoh.png" class="card-img-top" alt="Produkt 1">
@@ -126,19 +126,22 @@
         </div>
     </form>
 </section>
-<section class="container mt-5">
+
+<section class="container mt-5 pt-4" style=" min-height: 50vh !important;">
     <h2 class="text-center text-success">Často kladené dotazy (FAQ)</h2>
 
     <div class="accordion mt-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
                     Jak mohu objednat produkt?
                 </button>
             </h2>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                    Produkty můžete objednat přes naši stránku <a href="items.html">Produkty</a>. Stačí přidat do košíku a dokončit objednávku.
+                    <h6>Produkty můžete objednat přes naši stránku <a href="items.html">Produkty</a>. Stačí přidat do
+                        košíku a dokončit objednávku.</h6>
                 </div>
             </div>
         </div>
@@ -150,25 +153,44 @@
             </h2>
             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                    Doba dodání je obvykle 3–5 pracovních dní. O aktuálním stavu vás budeme informovat e-mailem.
+                    <h6>Doba dodání je obvykle 3–5 pracovních dní. O aktuálním stavu vás budeme informovat.</h6>
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                    Jak mohu kontaktovat zákaznickou podporu?
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                    Jak mohu kontaktovat vaši podporu?
                 </button>
             </h2>
             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                    Můžete nám napsat přes kontaktní formulář výše nebo na e-mail: <strong>podpora@greenfuture.cz</strong>.
+                    <h6>Můžete nám napsat přes kontaktní formulář výše nebo na e-mail:
+                        <strong>podpora@greenfuture.cz</strong>.</h6>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+                    Z jakého materiálu jsou vytvořeny naše produkty?
+                </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <h6>Naše výrobky jsou vyrobeny z ekologických a udržitelných materiálů, jako je recyklovaný plast,
+                        bambus, organická bavlna a biologicky rozložitelné složky.</h6>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<footer class="bg-success text-white text-center py-3 mt-5">
+    <p class="mb-0">Vytvořil: Filip Havlík</p>
+</footer>
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
