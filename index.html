@@ -25,14 +25,14 @@
     </div>
 </nav>
 
-<section class="container d-flex align-items-center justify-content-center min-vh-80 mt-5">
+<section class="container d-flex align-items-center justify-content-center mt-5" style=" min-height: 60vh !important;">
     <div class="row gy-4 align-items-center text-center text-lg-start">
         <div class="col-lg-6">
             <h1 class="fs-1">Zajištění zelené budoucnosti s <span style="color:green">GreenFuture</span></h1>
             <p class="fs-5">Jsme firma, která se snaží zajistit zelenou budoucnost díky udržitelných řešení.</p>
             <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                <a href="#about" class="btn btn-outline-success btn-lg">O nás</a>
-                <a href="items.html" class="btn btn-outline-success btn-lg">Nabídka služeb</a>
+                <a href="#about_us" class="btn btn-outline-success btn-lg">O nás</a>
+                <a href="#Items" class="btn btn-outline-success btn-lg">Nabídka produktů</a>
             </div>
         </div>
         <div class="col-lg-5 text-center">
@@ -41,15 +41,36 @@
     </div>
 </section>
 
-<section class="container mt-5">
+<section id="about_us" class="container mt-5" style=" min-height: 50vh !important;">
+    <div class="row align-items-center text-center text-lg-start">
+        <div class="col-lg-6">
+            <h2 class="text-success">O nás</h2>
+            <p class="fs-5">
+                Jsme společnost zaměřená na ekologická řešení, která pomáhají chránit naši planetu.
+                Naším cílem je poskytovat udržitelné produkty a inovace, které zlepšují kvalitu života
+                a minimalizují negativní dopad na životní prostředí.
+            </p>
+            <p>
+                Věříme, že každý krok směrem k zelenější budoucnosti má smysl, a proto nabízíme
+                širokou škálu ekologických produktů pro každodenní použití.
+            </p>
+            <a href="#" class="btn btn-success btn-lg my-4">Zjistit více</a>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="photos/Team_eco.jpg" class="img-fluid rounded shadow-lg mb-4" alt="O nás-foto">
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5" id="Items" style=" min-height: 70vh !important;">
     <h2 class="text-center mb-4">Nabídka produktů</h2>
     <div class="row g-4 justify-content-center">
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
-                <img src="" class="card-img-top" alt="Produkt 1">
+                <img src="photos/eco_batoh.png" class="card-img-top" alt="Produkt 1">
                 <div class="card-body text-center">
                     <h5 class="card-title">Ekologický batoh</h5>
-                    <p class="card-text">Stylový a ekologický batoh vyrobený z recyklovaných materiálů.</p>
+                    <p class="card-text">Stylový a ekologický batoh z recyklovaných materiálů.</p>
                     <p class="fw-bold">1 200 Kč</p>
                     <a href="#" class="btn btn-success">Koupit</a>
                 </div>
@@ -57,7 +78,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
-                <img src="" class="card-img-top" alt="Produkt 2">
+                <img src="photos/eco_nabijecka.png" class="card-img-top" alt="Produkt 2">
                 <div class="card-body text-center">
                     <h5 class="card-title">Solární nabíječka</h5>
                     <p class="card-text">Výkonná solární nabíječka pro vaše mobilní zařízení.</p>
@@ -68,7 +89,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
-                <img src="" class="card-img-top" alt="Produkt 3">
+                <img src="photos/eco_kartacek.png" class="card-img-top" alt="Produkt 3">
                 <div class="card-body text-center">
                     <h5 class="card-title">Bambusový kartáček</h5>
                     <p class="card-text">Ekologický zubní kartáček vyrobený z bambusu.</p>
@@ -78,10 +99,76 @@
             </div>
         </div>
     </div>
-    <div class="text-center mt-4">
+    <div class="text-center my-5">
         <a href="items.html" class="btn btn-outline-success btn-lg">Zobrazit více</a>
     </div>
 </section>
+
+<section class="container mt-5">
+    <h2 class="text-center text-success">Kontaktujte nás</h2>
+    <p class="text-center">Máte otázky? Napište nám!</p>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Jméno</label>
+            <input type="text" class="form-control" id="name" placeholder="Jméno Příjmění">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Váš e-mail">
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">Vaše zpráva</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Sem napište svou zprávu..."></textarea>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-success btn-lg">Odeslat</button>
+        </div>
+    </form>
+</section>
+<section class="container mt-5">
+    <h2 class="text-center text-success">Často kladené dotazy (FAQ)</h2>
+
+    <div class="accordion mt-3" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Jak mohu objednat produkt?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Produkty můžete objednat přes naši stránku <a href="items.html">Produkty</a>. Stačí přidat do košíku a dokončit objednávku.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Jaká je doba dodání?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Doba dodání je obvykle 3–5 pracovních dní. O aktuálním stavu vás budeme informovat e-mailem.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Jak mohu kontaktovat zákaznickou podporu?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Můžete nám napsat přes kontaktní formulář výše nebo na e-mail: <strong>podpora@greenfuture.cz</strong>.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
