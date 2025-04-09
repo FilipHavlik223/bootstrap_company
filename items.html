@@ -8,6 +8,7 @@
     <title>GreenFuture-Produkty</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #F1F8E1;">
 <nav class="navbar navbar-expand-lg navbar-light bg-success shadow-sm">
@@ -31,7 +32,7 @@
 </section>
 
 <section class="container mt-5" id="Items" style="min-height: 70vh !important;">
-    <h2 class="text-center mb-4">Nabídka produktů</h2>
+    <h2 class="text-center text-primary mb-4">Nabídka produktů</h2>
     <div class="row g-4 justify-content-center">
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
@@ -40,7 +41,14 @@
                     <h5 class="card-title">Ekologický batoh</h5>
                     <p class="card-text">Stylový a ekologický batoh z recyklovaných materiálů.</p>
                     <p class="fw-bold">1 200 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Ekologický batoh"
+                       data-desc="Stylový a ekologický batoh z recyklovaných materiálů."
+                       data-price="1 200 Kč"
+                       data-img="photos/eco_batoh.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -51,7 +59,14 @@
                     <h5 class="card-title">Solární nabíječka</h5>
                     <p class="card-text">Výkonná solární nabíječka pro vaše mobilní zařízení.</p>
                     <p class="fw-bold">850 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Solární nabíječka"
+                       data-desc="Výkonná solární nabíječka pro vaše mobilní zařízení."
+                       data-price="850 Kč"
+                       data-img="photos/eco_nabijecka.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -62,7 +77,14 @@
                     <h5 class="card-title">Bambusový kartáček</h5>
                     <p class="card-text">Ekologický zubní kartáček vyrobený z bambusu.</p>
                     <p class="fw-bold">120 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Bambusový kartáček"
+                       data-desc="Ekologický zubní kartáček vyrobený z bambusu."
+                       data-price="120 Kč"
+                       data-img="photos/eco_kartacek.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -73,7 +95,14 @@
                     <h5 class="card-title">Sada železných brček</h5>
                     <p class="card-text">Znovupoužitelná alternativa plastových brček</p>
                     <p class="fw-bold">75 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Sada železných brček"
+                       data-desc="Znovupoužitelná alternativa plastových brček."
+                       data-price="75 Kč"
+                       data-img="photos/zelezne_brcka.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,7 +113,14 @@
                     <h5 class="card-title">Kompostovatelné houbičky</h5>
                     <p class="card-text">Vyrobeno z přírodních vláken</p>
                     <p class="fw-bold">125 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Kompostovatelné houbičky"
+                       data-desc="Vyrobeno z přírodních vláken."
+                       data-price="125 Kč"
+                       data-img="photos/Kompostovatelna_houbicka.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -95,7 +131,14 @@
                     <h5 class="card-title">Krabička na jídlo</h5>
                     <p class="card-text">Krabička z nerezové oceli s bambusovým víčkem</p>
                     <p class="fw-bold">550 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Krabička na jídlo"
+                       data-desc="Krabička z nerezové oceli s bambusovým víčkem."
+                       data-price="550 Kč"
+                       data-img="photos/eco_krabicka.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -106,7 +149,14 @@
                     <h5 class="card-title">Bavlněná taška</h5>
                     <p class="card-text">Taška z organické bavlny</p>
                     <p class="fw-bold">250 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Bavlněná taška"
+                       data-desc="Taška z organické bavlny."
+                       data-price="250 Kč"
+                       data-img="photos/eco_taska.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -117,7 +167,14 @@
                     <h5 class="card-title">Micro Greens</h5>
                     <p class="card-text">Vše potřebné pro vypěstování mikrozeleniny</p>
                     <p class="fw-bold">90 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Micro Greens"
+                       data-desc="Vše potřebné pro vypěstování mikrozeleniny."
+                       data-price="90 Kč"
+                       data-img="photos/Tiny_greens.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
@@ -128,19 +185,74 @@
                     <h5 class="card-title">Bambusové holítko</h5>
                     <p class="card-text">Holítko s bambusovou rukojetí, který vydrží navěky</p>
                     <p class="fw-bold">750 Kč</p>
-                    <a href="#" class="btn btn-success">Koupit</a>
+                    <a href="#" class="btn btn-success openModalBtn"
+                       data-bs-toggle="modal" data-bs-target="#productModal"
+                       data-name="Bambusové holítko"
+                       data-desc="Holítko s bambusovou rukojetí, který vydrží navěky."
+                       data-price="750 Kč"
+                       data-img="photos/bambus_holitko.png">
+                        Koupit
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="text-center my-5">
-        <a href="index.html" class="btn btn-outline-success btn-lg">Hlavní stránka</a>
+        <a href="index.html" class="btn btn-outline-primary btn-lg">Hlavní stránka</a>
     </div>
 </section>
 
 <footer class="bg-success text-white text-center py-3 mt-5">
     <p class="mb-0">Vytvořil: Filip Havlík</p>
 </footer>
+
+<div class="modal fade" id="productModal"  tabindex="-1" aria-labelledby="modalNazev" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-success" id="modalNazev">Název produktu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+            </div>
+            <div class="modal-body d-flex flex-column flex-md-row gap-4">
+                <img id="modalPhoto" src="" class="img-fluid rounded" alt="Produkt" style="max-width: 300px;">
+                <div>
+                    <p id="modalPopis">Popis produktu</p>
+                    <p class="fw-bold" id="modalCena">Cena: 0 Kč</p>
+                    <button class="btn btn-success">
+                        <i class="bi bi-cart-plus"></i> Přidat do košíku
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modalTitle = document.getElementById("modalNazev");
+        const modalPhoto = document.getElementById("modalPhoto");
+        const modalPopis = document.getElementById("modalPopis");
+        const modalCena = document.getElementById("modalCena");
+
+        const buttons = document.querySelectorAll(".openModalBtn");
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                const name = this.dataset.name;
+                const desc = this.dataset.desc;
+                const price = this.dataset.price;
+                const img = this.dataset.img;
+
+                modalTitle.textContent = name;
+                modalPopis.textContent = desc;
+                modalCena.textContent = "Cena: " + price;
+                modalPhoto.src = img;
+                modalPhoto.alt = name;
+            });
+        });
+    });
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
