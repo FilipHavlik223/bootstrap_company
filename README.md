@@ -11,7 +11,7 @@ Projekt obsahuje dvě hlavní stránky:
 
 ## Použité technologie
 - **Bootstrap 5**
-- **HTML5, CSS3**
+- **HTML5, CSS3, scss**
 - **Responzivní design**
 
 ## Odkaz na web
